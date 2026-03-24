@@ -12,6 +12,7 @@ venv*
 logs*
 log/*
 zlm/log*
+zlm/MediaServer
 
 
 
