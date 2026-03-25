@@ -40,12 +40,20 @@ ZLMediaKit是一个高性能的流媒体服务器，支持RTSP、RTMP、HTTP-FLV
 
 ### 启动服务
 
+**注意**：在Linux平台上，如果使用默认端口（如80、443、554等），需要以root用户或使用sudo模式启动。如果使用非特权端口（如8080、4430、5540等），则可以使用普通用户启动。
+
 ```bash
-# 直接运行
+# 直接运行（使用非特权端口时）
 ./MediaServer
+
+# 使用sudo启动（使用默认特权端口时）
+sudo ./MediaServer
 
 # 后台运行
 ./MediaServer -d
+
+# 使用sudo后台运行
+sudo ./MediaServer -d
 ```
 
 ### 停止服务
